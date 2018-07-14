@@ -1,0 +1,37 @@
+#include "userDefine.h"
+
+void redLed()
+{
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);	
+}	
+
+void blueLed()
+{	
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
+}
+
+
+void greenLed()
+{
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, GPIO_PIN_3);
+}
+
+void landLed()
+{
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, GPIO_PIN_3);
+	
+}
+void turnoffled()
+{
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
+	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0);
+}

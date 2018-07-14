@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp
+".\objects\suzakumain.o"
+".\objects\uservariables.o"
+".\objects\suzakupid.o"
+".\objects\suzakuflightctrl.o"
+".\objects\suzakucal.o"
+".\objects\initializers.o"
+".\objects\interrupts.o"
+".\objects\esc_pwm.o"
+".\objects\ano_of.o"
+".\objects\jy901.o"
+".\objects\led.o"
+".\objects\eeprom.o"
+".\driverlib\rvmdk\driverlib.lib"
+".\objects\startup_tm4c123.o"
+".\objects\system_tm4c123.o"
+--library_type=microlib --strict --scatter ".\Objects\suzakuTI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\suzakuTI.map" -o .\Objects\suzakuTI.axf
